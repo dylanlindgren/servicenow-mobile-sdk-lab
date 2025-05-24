@@ -1,3 +1,8 @@
+[<img src="../Images/GuidebookHome.svg">](00-getting-started.md)
+
+<img src="../Images/now.png" width="100">&nbsp;<img src="../Images/Swift_logo_color.svg"  width="100">
+# Lab Guidebook: Bring ServiceNow to life in your iOS app! A beginner's guide to the Mobile SDK
+
 # Exercise 1: Xcode Basics
 Xcode is a free application built by Apple allowing developers to create applications for many types of Apple devices, such as iPhones, iPads, Apple Watch, Apple TV, Apple Vision Pro, and even multi-platform applications. It is only available on MacOS.
 
@@ -109,3 +114,7 @@ At the moment, the application just displays the message "Hello World" with a gl
 You can also choose a destination using the destinations dropdown, and run the application in the simulator by pressing the  button.
 
 <img src="images/01-08-simulatorrun.png" title="hover text">
+
+<br /><br />
+
+[<img src="../Images/NextSection.svg">](02-instance-authentication-connection.md)

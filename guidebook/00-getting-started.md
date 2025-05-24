@@ -1,11 +1,14 @@
+<img src="../Images/now.png" width="100">&nbsp;<img src="../Images/Swift_logo_color.svg"  width="100">
+# Lab Guidebook: Bring ServiceNow to life in your iOS app! A beginner's guide to the Mobile SDK
+
 # 🔰 Getting Started
-## Bring ServiceNow to life in your iOS app! A beginner's guide to the Mobile SDK
+
 Does your company have a custom iOS application and you're wondering how it can access ServiceNow® data & workflows? Do you want to build one but don't know what's possible/where to start? See first-hand in this lab how the Mobile SDK accelerates iOS app development by building an app from scratch – no prior iOS development experience required!
 
 Create the experience you want, natively in your own app.
 
 ## About the Mobile SDK
-The Mobile SDK is a library that native mobile application developers can use to make it easier to interact with a ServiceNow instance. Versions of the SDK exist for both iOS and Android.
+The ServiceNow Mobile SDK is a library that native mobile application developers can use to make it easier to interact with a ServiceNow instance. Versions of the SDK exist for both iOS and Android.
 
 On top of managing authentication with a ServiceNow instance, as of writing the SDK consists of 5 primary components:
 
@@ -122,11 +125,25 @@ At the end of this lab there are links to further resources where you can contin
 ## Required Lab Files
 The below files will be required during the lab.
 
-- The ServiceNow Mobile SDK for iOS itself that you will use in Xcode.
-
-The latest version of the above can be downloaded from the official [Mobile SDK Libraries - iOS](https://store.servicenow.com/sn_appstore_store.do#!/store/application/1539a1f087ea3014970e2178cebb3564) ServiceNow Store page, which also includes documentation and a sample application.
+| Description | Download |
+|---|---|
+| Mobile SDK scoped application that can be loaded onto a ServiceNow instance | [ServiceNow Store](https://www.example.com)  |
+| The ServiceNow Mobile SDK for iOS itself that you will use in Xcode. | [Mobile SDK Libraries - iOS \| ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/1539a1f087ea3014970e2178cebb3564) |
 
 ## Lab Instructions
-This lab is broken into multiple sections, which must be followed in the prescribed order.
 
-You can use the “Next Section” buttons at the bottom of each section to proceed through the lab in the correct order.
+This lab is broken into multiple sections, which must be followed in the order listed below. You can use the "Next Section" buttons at the bottom of each section to proceed through the lab in the correct order.
+### 1 – [Xcode Basics](01-xcode-basics.md)
+
+### 2 – [Instance Authentication & SDK Connection](02-instance-authentication-connection.md)
+
+### 3 – [Frameworks, Libraries, & Packages](03-frameworks-libraries-packages.md)
+
+### 4 – [Login Screen](04-login-screen.md)
+
+### 5 – [Connect To & Show Data](05-connect-show-data.md)
+
+### 6 – [Add Virtual Agent](06-add-virtual-agent.md)
+
+### 7 – [Embed Service Portal](07-embed-service-portal.md)
+### 8 – [Further Resources](08-further-resources.md)

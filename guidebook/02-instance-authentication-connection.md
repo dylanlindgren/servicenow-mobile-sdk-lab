@@ -1,4 +1,9 @@
-# Exercise 2: Instance Authentication & SDK Connection
+[<img src="../Images/GuidebookHome.svg">](00-getting-started.md)
+
+<img src="../Images/now.png" width="100">&nbsp;<img src="../Images/Swift_logo_color.svg"  width="100">
+# Lab Guidebook: Bring ServiceNow to life in your iOS app! A beginner's guide to the Mobile SDK
+
+# 🔐 Exercise 2: Instance Authentication & SDK Connection
 Typically an organization that has a native mobile app will have some sort of single sign-on solution. This will allow for example one username and password to be used to sign on across all their services such as an iOS native mobile application, an Android native mobile application, and their website.
 
 In our case, we want each user to have a single username and password that can log them in to our iOS application, as well as the ServiceNow instance.
@@ -24,7 +29,7 @@ The Mobile SDK authenticates to the ServiceNow instance using what's called a JW
 3. Choose a name for the application. For example, **Hengtan Mobile (iOS)**.
 4. Select **Native** as the application type, and click **Create**.
 
-<img src="images/03-01-create.png" width="500" title="The Create application dialog in Auth0."><br />
+<img src="images/02-01-create.png" width="500" title="The Create application dialog in Auth0."><br />
 The Create application dialog in Auth0.
 
 5. In the page that loads, switch to the **Settings** tab.
@@ -40,7 +45,7 @@ BUNDLE_IDENTIFIER://AUTH0_TENANT_DOMAIN/ios/BUNDLE_IDENTIFIER/callback
 
 6. The **Bundle Identifier** of my iOS application is `com.dylanlindgren.Hengtan-Mobile`, and my **Auth0 Tenant Domain** is `dl-hengtan4.jp.auth0.com`, so I set these fields as per the screenshot below.
 
-<img src="images/03-02-settings.png" title="TODO"><br />
+<img src="images/02-02-settings.png" title="TODO"><br />
 
 7. Click **Save Changes** at the bottom of the page.
 
@@ -54,14 +59,14 @@ We also need a corresponding user account in our ServiceNow instance which that 
 3. Enter an **Email** and a **Password**. Make note of these details as these will be the credentials we will log onto the mobile app with.
 4. Leave the **Connection** field set to **Username-Password Authentication** and click **Create**.
 
-<img src="images/03-03-user.png" width="400" title="The Create user dialog in Auth0."><br />
+<img src="images/02-03-user.png" width="400" title="The Create user dialog in Auth0."><br />
 The **Create user** dialog in Auth0.
 
 5. Make a note of the `user_id` automatically created for this user, which is the unique ID that allows the correlation of separate user accounts in each system with each other.
 
     It will start with `auth0|`, followed by a number of hexadecimal characters, and will appear in the position shown in the screenshot below on the user account page.
 
-<img src="images/03-04-createduser.png" width="600" title="The user_id automatically generated for the Auth0 user account."><br />
+<img src="images/02-04-createduser.png" width="600" title="The user_id automatically generated for the Auth0 user account."><br />
 The `user_id` automatically generated for the Auth0 user account.
 
 6. In your ServiceNow instance, navigate to **User Administration** > **Users**.
@@ -86,14 +91,14 @@ The `user_id` automatically generated for the Auth0 user account.
 > [!NOTE]
 > The Mobile SDK supports guest users, however to make full use of all the features we will grant this `itil` role to our user.
 
-<img src="images/03-05-snuser.png" title="The user account created in the instance, with the itil role and the Source field set."><br />
+<img src="images/02-05-snuser.png" title="The user account created in the instance, with the itil role and the Source field set."><br />
 The user account created in the instance, with the `itil` role and the **Source** field set.
 
 ## 2.4 – Create an OAuth JWT API endpoint for external clients
 1. In the Auth0 management interface, choose **Settings** and then change to the **Signing keys** tab.
 2. Scroll down to the **List of Valid Keys** section, press the button to the right of the key listed as "Currently Used", and choose **Copy Signing Certificate**.
 
-<img src="images/03-06-cert.png" title="Copying the signing certificiate from the List of Valid Keys section of the settings page."><br />
+<img src="images/02-06-cert.png" title="Copying the signing certificiate from the List of Valid Keys section of the settings page."><br />
 Copying the signing certificiate from the **List of Valid Keys** section of the settings page.
 
 3. In your ServiceNow instance, navigate to **System Definition** > **Certificates**, and click **New**.
@@ -127,7 +132,7 @@ Copying the signing certificiate from the **List of Valid Keys** section of the 
 3. Un-check the **Advanced** checkbox.
 4. Use the below JSON for the value of the **SDK Settings** field:
 
-```
+```json
 {
     "graphql": {
         "enabled" : true,
@@ -160,4 +165,8 @@ Copying the signing certificiate from the **List of Valid Keys** section of the 
 ```
 Press the **Submit** button to save the record.
 
-<img src="images/03-07-sdksettings.png" title="TODO"><br />
+<img src="images/02-07-sdksettings.png" title="TODO">
+
+<br /><br />
+
+[<img src="../Images/NextSection.svg">](03-frameworks-libraries-packages.md)
