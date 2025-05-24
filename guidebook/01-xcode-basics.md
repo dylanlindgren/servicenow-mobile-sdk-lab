@@ -45,9 +45,9 @@ These steps will allow you to install your application on your personal iOS devi
 | Field | Value |
 | --- | --- |
 | Product Name | Hengtan Mobile |
-| Team | By signing in with your Apple ID in step 1.2 this will have created a "Team" based on your Apple ID. For example, Dylan Lindgren (Personal Team). |
+| Team | By signing in with your Apple ID in step 1.2 this will have created a "Team" based on your Apple ID. For example, `Dylan Lindgren (Personal Team)`. |
 | Select it for this application so you can run it on your personal iOS devices and not just in the Simulator. | Organization Identifier |
-| Any unique name. This will typically be set to a domain name you control, but in reverse. | Feel free to base it on your personal domain name, or your company's domain name. For example, com.dylanlindgren. |
+| Any unique name. This will typically be set to a domain name you control, but in reverse. | Feel free to base it on your personal domain name, or your company's domain name. For example, `com.dylanlindgren`. |
 | Bundle Identifier | The Product Name and Organization Identifier fields will be combined to automatically complete this field.<br/><br/>This Bundle Identifier is important if you plan to publish to the Apple App Store, as it must be unique across all applications in the App Store.<br/><br/>Once published, no other applications can be published with the same one (although you can publish new versions of it).<br/><br/>This will also be important when we setup the app's authentication. | 
 | Interface | SwiftUI |
 | Language | Swift |
@@ -90,7 +90,7 @@ First, download the icon we will use for the app.
 
 > [!NOTE]<br/>
 > If you don't see the Hex Color field, ensure you have Show color value as set to 8-bit.
-> ![alt text](images/01-06-colorvalues.png)
+> <img src="images/01-06-colorvalues.png" width="300" title="hover text">
 
 ## 1.5 – Running the Application
 Xcode's Simulator application comes with a number of devices able to be simulated. iOS applications can be run on multiple different devices with various sizes, aspect ratios, and pixel density. It's important to test your application across various devices to ensure it works as expected.
@@ -102,10 +102,10 @@ For the purposes of this lab, we will be simulating our app running on an iPhone
 
 The Simulator application will start automatically, and after a few moments you will see your application launch inside a simulated iPhone 15 Pro Max. You might see a blank white screen for a bit, but please be patient! 😇
 
-![alt text](images/01-07-simulator.png | width=100)
+<img src="images/01-07-simulator.png" width="300" title="hover text">
 
 At the moment, the application just displays the message "Hello World" with a globe icon above it.
 
 You can also choose a destination using the destinations dropdown, and run the application in the simulator by pressing the  button.
 
-![alt text](images/01-08-simulatorrun.png)
+<img src="images/01-08-simulatorrun.png" title="hover text">
