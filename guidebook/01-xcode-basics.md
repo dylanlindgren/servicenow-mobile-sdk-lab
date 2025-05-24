@@ -102,7 +102,7 @@ For the purposes of this lab, we will be simulating our app running on an iPhone
 
 The Simulator application will start automatically, and after a few moments you will see your application launch inside a simulated iPhone 15 Pro Max. You might see a blank white screen for a bit, but please be patient! 😇
 
-![alt text](images/01-07-simulator.png)
+![alt text](images/01-07-simulator.png | width=100)
 
 At the moment, the application just displays the message "Hello World" with a globe icon above it.
 
