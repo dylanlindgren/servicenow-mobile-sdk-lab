@@ -1,4 +1,4 @@
-<img src="../Images/now.png" width="100">&nbsp;<img src="../Images/Swift_logo_color.svg"  width="100">
+<img src="../images/now.png" width="100">&nbsp;<img src="../images/Swift_logo_color.svg"  width="100">
 # Lab Guidebook: Bring ServiceNow to life in your iOS app! A beginner's guide to the Mobile SDK
 
 # 🔰 Getting Started

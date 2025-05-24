@@ -1,6 +1,6 @@
-[<img src="../Images/GuidebookHome.svg">](00-getting-started.md)
+[<img src="../images/GuidebookHome.svg">](00-getting-started.md)
 
-<img src="../Images/now.png" width="100">&nbsp;<img src="../Images/Swift_logo_color.svg"  width="100">
+<img src="../images/now.png" width="100">&nbsp;<img src="../images/Swift_logo_color.svg"  width="100">
 # Lab Guidebook: Bring ServiceNow to life in your iOS app! A beginner's guide to the Mobile SDK
 ## 💬 Exercise 6: Add Virtual Agent
 
@@ -202,4 +202,4 @@ After logging in, you'll now have an additional **Chat** tab at the bottom. Pres
 
 <br /><br />
 
-[<img src="../Images/NextSection.svg">](07-embed-service-portal.md)
+[<img src="../images/NextSection.svg">](07-embed-service-portal.md)

@@ -1,6 +1,6 @@
-[<img src="../Images/GuidebookHome.svg">](00-getting-started.md)
+[<img src="../images/GuidebookHome.svg">](00-getting-started.md)
 
-<img src="../Images/now.png" width="100">&nbsp;<img src="../Images/Swift_logo_color.svg"  width="100">
+<img src="../images/now.png" width="100">&nbsp;<img src="../images/Swift_logo_color.svg"  width="100">
 # Lab Guidebook: Bring ServiceNow to life in your iOS app! A beginner's guide to the Mobile SDK
 
 # 📦 Exercise 3: Frameworks, Libraries, & Packages
@@ -89,4 +89,4 @@ The **Mobile SDK Instance URL** property after having been added.
 
 <br /><br />
 
-[<img src="../Images/NextSection.svg">](04-login-screen.md)
+[<img src="../images/NextSection.svg">](04-login-screen.md)
