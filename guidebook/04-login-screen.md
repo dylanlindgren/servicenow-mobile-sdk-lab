@@ -14,7 +14,7 @@ In the case of the authentication part of our application, we will create two fi
 
 1. Right-click on the **Hengtan Mobile** group in the project navigator (the one with the folder icon) and click **New File...** in the list.
 
-	<img src="images/04-01-newfile.png" width=300>
+<img src="images/04-01-newfile.png" width=300>
 	
 2. Select **Swift File** and click **Next**.
 3. Give the file the name **SDKManager.swift**, and click **Create**.
@@ -90,7 +90,7 @@ In the case of the authentication part of our application, we will create two fi
     > We also have `login` and `logout` methods which interact with the `Auth0` object (part of the Auth0 SDK) to trigger these actions, and on completion update the relevant properties on our `SDKManager` class.
 
 ### 4.2) Creating SettingsView
-SettingsView will contain the makeup of our login/logout user interface, as well as the code that will execute the functions in our SDKManager class.
+`SettingsView` will contain the makeup of our login/logout user interface, as well as the code that will execute the functions in our `SDKManager` class.
 
 1. Right-click on the **Hengtan Mobile** group in the project navigator (the one with the folder icon) and click **New File...** in the list.
 2. Select **SwifUI View** and click **Next**.
@@ -132,7 +132,7 @@ SettingsView will contain the makeup of our login/logout user interface, as well
 > From our `body` property we are returning a `VStack` (a type of view), and inside that we're using the `isLoggedIn` property on the `sdkManager` object to show the right text and button for whether we're logged in or not.
 
 ### 4.3) Add to ContentView
-Now that we have our SettingsView view created, we can use it in our application.
+Now that we have our `SettingsView` view created, we can use it in our application.
 
 1. In the project navigator, open the **ContentView.swift** file.
 2. Replace the code inside the `VStack {...}` with `SettingsView(sdkManager: sdkManager)`.
@@ -182,7 +182,7 @@ Click the **Login via Auth0** button, and you'll shown the regular prompt that A
 
 <img src="images/04-04-message.png" width=200/>
 
-You'll then be taken to the Auth0 login page. Login with the username and password of the user you created in Auth0 in [section 2.3](02-instance-authentication-sdk-connection.md#2.3) and click **Continue**.
+You'll then be taken to the Auth0 login page. Login with the username and password of the user you created in Auth0 in [section 2.3](02-instance-authentication-connection.md#2.3) and click **Continue**.
 
 <img src="images/04-05-login.png" width=300/>
 

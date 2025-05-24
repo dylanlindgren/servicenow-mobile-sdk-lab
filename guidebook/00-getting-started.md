@@ -108,7 +108,7 @@ In the core part of the lab will be creating an simple example iOS application c
 ## Prerequisites
 This workshop is intended for software development professionals who are familiar with basic programming concepts like variables, classes, web requests, and web authentication, however it is written in a step-by-step way that can be followed by anyone.
 
-You will need Washington DC-or-later release ServiceNow instance with admin access, and the [Mobile SDK](https://store.servicenow.com/sn_appstore_store.do#!/store/application/52821846803120101040fe43e5b9ee8c/2.0.0) and [Glide Virtual Agent](https://docs.servicenow.com/bundle/tokyo-servicenow-platform/page/administer/virtual-agent/task/activate-virtual-agent.html) plugins installed.
+You will need Washington DC-or-later release ServiceNow instance with admin access, and the **[Mobile SDK](https://store.servicenow.com/sn_appstore_store.do#!/store/application/52821846803120101040fe43e5b9ee8c/2.0.0)** and **[Glide Virtual Agent](https://docs.servicenow.com/bundle/tokyo-servicenow-platform/page/administer/virtual-agent/task/activate-virtual-agent.html)** plugins installed.
 
 It will greatly benefit participants to have a solid understanding of **ServiceNow System Administration**.
 
@@ -127,8 +127,8 @@ The below files will be required during the lab.
 
 | Description | Download |
 |---|---|
-| Mobile SDK scoped application that can be loaded onto a ServiceNow instance | [ServiceNow Store](https://www.example.com)  |
-| The ServiceNow Mobile SDK for iOS itself that you will use in Xcode. | [Mobile SDK Libraries - iOS \| ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/1539a1f087ea3014970e2178cebb3564) |
+| Mobile SDK scoped application that can be loaded onto a ServiceNow instance | [Mobile SDK \| ServiceNow Store](https://store.servicenow.com/store/app/ef8fabee1b646a50a85b16db234bcbf4)  |
+| The ServiceNow Mobile SDK for iOS itself that you will use in Xcode. | [Mobile SDK Libraries - iOS \| ServiceNow Store](https://store.servicenow.com/store/app/8999e7221b246a50a85b16db234bcbc2) |
 
 ## Lab Instructions
 

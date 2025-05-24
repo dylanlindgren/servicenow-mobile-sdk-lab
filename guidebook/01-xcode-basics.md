@@ -22,8 +22,8 @@ When developing iOS applications, you'll primarily be using Xcode itself, but yo
 4. Wait until the installation completes.
 
 > [!NOTE]  
-> If prompted, ensure that iOS is selected as a platform you want the simulator runtime installed for.<br/><br/>
-> If you've already installed Xcode and you want to check this is done, from the Xcode menu bar you can choose Xcode > Settings... and look at the Platforms tab to see e.g. iOS 17.4
+> If prompted, ensure that **iOS** is selected as a platform you want the simulator runtime installed for.<br/><br/>
+> If you've already installed Xcode and you want to check this is done, from the Xcode menu bar you can choose **Xcode** > **Settings...** and look at the **Platforms** tab to see e.g. *iOS 17.4*
 
 ## 1.2 – Configuration
 These steps will allow you to install your application on your personal iOS devices without requiring an Apple Developer account.
@@ -32,7 +32,8 @@ These steps will allow you to install your application on your personal iOS devi
 2. Choose **Xcode** > **Settings...** from the Xcode menu bar.
 3. In the **Accounts** tab, press the **[+]** button, choose **Apple ID**, and sign in with your personal Apple ID.
 
-![alt text](images/01-01-accounts.png "The Accounts tab in Xcode Settings showing it signed in with an Apple ID.")
+<img src="images/01-01-accounts.png" width=600/><br />
+The Accounts tab in Xcode Settings showing it signed in with an Apple ID.
 
 4. Close the Settings dialog.
 
@@ -41,18 +42,17 @@ These steps will allow you to install your application on your personal iOS devi
 2. Ensure the **iOS** toggle button is selected at the top of the window.
 3. Choose **App**, and click **Next**.
 
-![alt text](images/01-02-template.png)
+<img src="images/01-02-template.png" width=600/><br />
 
 4. Complete the form as follows:
 
-![alt text](images/01-03-options.png)
+<img src="images/01-03-options.png" width=600/><br />
 
 | Field | Value |
 | --- | --- |
 | Product Name | Hengtan Mobile |
-| Team | By signing in with your Apple ID in step 1.2 this will have created a "Team" based on your Apple ID. For example, `Dylan Lindgren (Personal Team)`. |
-| Select it for this application so you can run it on your personal iOS devices and not just in the Simulator. | Organization Identifier |
-| Any unique name. This will typically be set to a domain name you control, but in reverse. | Feel free to base it on your personal domain name, or your company's domain name. For example, `com.dylanlindgren`. |
+| Team | By signing in with your Apple ID in step 1.2 this will have created a "Team" based on your Apple ID. For example, `Dylan Lindgren (Personal Team)`.<br /><br />Select it for this application so you can run it on your personal iOS devices and not just in the Simulator. |
+| Organization Identifier | Any unique name. This will typically be set to a domain name you control, but in reverse.<br /><br />Feel free to base it on your personal domain name, or your company's domain name. For example, `com.dylanlindgren`. |
 | Bundle Identifier | The Product Name and Organization Identifier fields will be combined to automatically complete this field.<br/><br/>This Bundle Identifier is important if you plan to publish to the Apple App Store, as it must be unique across all applications in the App Store.<br/><br/>Once published, no other applications can be published with the same one (although you can publish new versions of it).<br/><br/>This will also be important when we setup the app's authentication. | 
 | Interface | SwiftUI |
 | Language | Swift |
@@ -65,7 +65,7 @@ These steps will allow you to install your application on your personal iOS devi
 
 > [!NOTE]<br/>
 > Xcode will automatically create a subfolder in this directory with the name of your project name (e.g. "Hengtan Mobile" in our case).<br/><br/>
-> Standard practice is to place Xcode projects within the "Developer" directory in your home directory e.g. /Users/dylan.lindgren/Developer.
+> Standard practice is to place Xcode projects within the "Developer" directory in your home directory e.g. `/Users/dylan.lindgren/Developer`.
 
 7. Uncheck the **Create Git repository on my Mac** checkbox.
 
@@ -76,26 +76,27 @@ The project will open automatically.
 ## 1.4 – App Branding
 While there are many things we can do to brand our app, the two we will use for our app are its icon, and it's accent color.
 
-First, download the icon we will use for the app.
+First, right-click and save the icon below which we will use for the app.<br />
 
-// TODO: DOWNLOAD LINK
+[<img src="../resources/hengtan.png" width="100" title="hover text">](../resources/hengtan.png)<br />
+The application icon for our "Hengtan Mobile" app.
 
-> The application icon for our "Hengtan Mobile" app.
+> 
 1. From the project navigation tree on the left side of the window, choose the automatically-created **Assets.xcassets** file.
 2. Select **AppIcon**, and click on the **1024x1024px** area in the middle to reveal options on the right-side of the window. (Choose **View** > **Inspectors** > **Show Inspector** if you don't see this)
 3. Click the folder icon next to the **File Name** field and select the **hengtan.png** file.
 
-![alt text](images/01-04-icon.png)
+<img src="images/01-04-icon.png" width="700">
 
 4. Select **AccentColor**, and click on the **Universal** area in the middle to reveal options on the right-side of the window.
 
 5. Click the **Show Color Panel** button, and enter the value `E8B333` into the **Hex Color** field.
 
-![alt text](images/01-05-color.png)
+<img src="images/01-05-color.png" width="700">
 
 > [!NOTE]<br/>
 > If you don't see the Hex Color field, ensure you have Show color value as set to 8-bit.
-> <img src="images/01-06-colorvalues.png" width="300" title="hover text">
+> <img src="images/01-06-colorvalues.png" width="300">
 
 ## 1.5 – Running the Application
 Xcode's Simulator application comes with a number of devices able to be simulated. iOS applications can be run on multiple different devices with various sizes, aspect ratios, and pixel density. It's important to test your application across various devices to ensure it works as expected.
@@ -107,13 +108,13 @@ For the purposes of this lab, we will be simulating our app running on an iPhone
 
 The Simulator application will start automatically, and after a few moments you will see your application launch inside a simulated iPhone 15 Pro Max. You might see a blank white screen for a bit, but please be patient! 😇
 
-<img src="images/01-07-simulator.png" width="300" title="hover text">
+<img src="images/01-07-simulator.png" width="300">
 
 At the moment, the application just displays the message "Hello World" with a globe icon above it.
 
-You can also choose a destination using the destinations dropdown, and run the application in the simulator by pressing the  button.
+You can also choose a destination using the destinations dropdown, and run the application in the simulator by pressing the <img src="images/01-08-play.png" width=20/> (play) button.
 
-<img src="images/01-08-simulatorrun.png" title="hover text">
+<img src="images/01-09-simulatorrun.png">
 
 <br /><br />
 

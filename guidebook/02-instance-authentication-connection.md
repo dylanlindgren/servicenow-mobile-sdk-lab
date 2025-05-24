@@ -14,7 +14,7 @@ In our case, the third-party solution we will use is [Auth0](https://auth0.com/)
 
 The Mobile SDK authenticates to the ServiceNow instance using what's called a JWT token (often pronounced as a "jot token"). When the user signs on to the app using Auth0, they app can be provided with a JWT token signed by Auth0 that contains a number of claims (e.g. "I am john smith, and I am an admin user"). The ServiceNow instance can be configured to trust claims made by Auth0, meaning the Mobile SDK can then provide this JWT token to the ServiceNow instance to automatically log onto it based on the claims within it.
 
-## 2.1 – Signup for an Auth0 Trial
+## 2.1 – Signup for an Auth0 Trial<a name="2.1"></a>
 1. Navigate to [https://auth0.com/signup](https://auth0.com/signup) and create an account.
 2. When prompted, choose **Personal** or **Other** as the account type, select **I need advanced settings**, and click **Next**.
 3. As the **Tenant Domain**, set it to anything you like. Ideally something meaningful, and readable, and of course unique. For example, `dl-hengtan4.jp.auth0.com`.
@@ -23,7 +23,7 @@ The Mobile SDK authenticates to the ServiceNow instance using what's called a JW
 > [!NOTE]
 > Your tenant domain will be made up of the name you choose, with the domain suffix of whatever your geographic region is. For example, for the Japan region the suffix will be `jp.auth0.com`.
 
-## 2.2 – Create a Native Application in Auth0
+## 2.2 – Create a Native Application in Auth0<a name="2.2"></a>
 1. In the Auth0 management interface, choose **Applications** > **Applications**.
 2. Click the **Create Application** button.
 3. Choose a name for the application. For example, **Hengtan Mobile (iOS)**.
@@ -49,7 +49,7 @@ BUNDLE_IDENTIFIER://AUTH0_TENANT_DOMAIN/ios/BUNDLE_IDENTIFIER/callback
 
 7. Click **Save Changes** at the bottom of the page.
 
-## 2.3 – Create User Accounts
+## 2.3 – Create User Accounts<a name="2.3"></a>
 Auth0 will be our identity provider, and so we need to create a user account in our Auth0 management interface for us to log onto it with as a regular user.
 
 We also need a corresponding user account in our ServiceNow instance which that regular user will use when interacting with the instance.
@@ -78,7 +78,7 @@ The `user_id` automatically generated for the Auth0 user account.
 | Email | This can be set to any email address, but a good idea is to set this to the email address of the account you created in Auth0. |
 | First name | The first name of the user. |
 | Last name | The last name of the user. |
-| Source | The `user_id` Auth0 automatically gave to the user you created in it. For example, `auth0|65e81221897d73e1e2042073` |
+| Source | The `user_id` Auth0 automatically gave to the user you created in it. For example, `auth0\|65e81221897d73e1e2042073` |
 
 > [!NOTE]
 > The Source field is not included in the default view on an out of box instance. You can use Form Layout to add it (right-click the form header, and choose **Configure** > **Form Layout**).
