@@ -27,8 +27,7 @@ These steps will allow you to install your application on your personal iOS devi
 2. Choose **Xcode** > **Settings...** from the Xcode menu bar.
 3. In the **Accounts** tab, press the **[+]** button, choose **Apple ID**, and sign in with your personal Apple ID.
 
-// TODO: IMAGE
-> The Accounts tab in Xcode Settings showing it signed in with an Apple ID.
+![alt text](images/01-01-accounts.png "The Accounts tab in Xcode Settings showing it signed in with an Apple ID.")
 
 4. Close the Settings dialog.
 
@@ -37,11 +36,11 @@ These steps will allow you to install your application on your personal iOS devi
 2. Ensure the **iOS** toggle button is selected at the top of the window.
 3. Choose **App**, and click **Next**.
 
-// TODO: IMAGE
+![alt text](images/01-02-template.png)
 
 4. Complete the form as follows:
 
-// TODO: IMAGE
+![alt text](images/01-03-options.png)
 
 | Field | Value |
 | --- | --- |
@@ -81,16 +80,17 @@ First, download the icon we will use for the app.
 2. Select **AppIcon**, and click on the **1024x1024px** area in the middle to reveal options on the right-side of the window. (Choose **View** > **Inspectors** > **Show Inspector** if you don't see this)
 3. Click the folder icon next to the **File Name** field and select the **hengtan.png** file.
 
-// TODO: IMAGE
+![alt text](images/01-04-icon.png)
 
 4. Select **AccentColor**, and click on the **Universal** area in the middle to reveal options on the right-side of the window.
 
 5. Click the **Show Color Panel** button, and enter the value `E8B333` into the **Hex Color** field.
 
-// TODO: IMAGE
+![alt text](images/01-05-color.png)
 
 > [!NOTE]<br/>
 > If you don't see the Hex Color field, ensure you have Show color value as set to 8-bit.
+> ![alt text](images/01-06-colorvalues.png)
 
 ## 1.5 – Running the Application
 Xcode's Simulator application comes with a number of devices able to be simulated. iOS applications can be run on multiple different devices with various sizes, aspect ratios, and pixel density. It's important to test your application across various devices to ensure it works as expected.
@@ -102,10 +102,10 @@ For the purposes of this lab, we will be simulating our app running on an iPhone
 
 The Simulator application will start automatically, and after a few moments you will see your application launch inside a simulated iPhone 15 Pro Max. You might see a blank white screen for a bit, but please be patient! 😇
 
-// TODO: IMAGE
+> ![alt text](images/01-07-simulator.png)
 
 At the moment, the application just displays the message "Hello World" with a globe icon above it.
 
 You can also choose a destination using the destinations dropdown, and run the application in the simulator by pressing the  button.
 
-// TODO: IMAGE
+> ![alt text](images/01-08-simulatorrun.png)
