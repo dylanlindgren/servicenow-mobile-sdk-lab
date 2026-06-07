@@ -21,7 +21,7 @@ The "Add package dependencies" dialog in Xcode.
 5. Right-click on the top-level group in the project navigator (the one with the grey folder icon) and choose **New File...** from the list.
 
 <img src="images/03-02-newfile.png" width=400 title="Creating a new file in the Hengtan Mobile top-level group."><br />
-> Creating a new file in the Hengtan Mobile top-level group.
+Creating a new file in the Hengtan Mobile top-level group.
 
 6. From the file types, select **Property List** from the **Resource** section, and click **Next**.
 
@@ -57,9 +57,8 @@ The "Add package dependencies" dialog in Xcode.
 Creating a URL Type in our application
 
 ## 3.2 – Mobile SDK
-1. Extract the **NowKit.zip** file from the lab files into a location on your machine. 
-
-// TODO: Download Link
+1. Extract the file you downloaded from the [Mobile SDK Libraries – iOS
+](https://store.servicenow.com/store/app/8999e7221b246a50a85b16db234bcbc2) page on the ServiceNow Store into a location on your machine. 
 
 2. Drag and drop the extracted **NowKit** folder underneath the top-most **Hengtan Mobile** item in the project navigator.
 
